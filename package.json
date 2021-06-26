@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "mkdir dist && ng build",
+    "build": "ng build && cp CNAME docs",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
