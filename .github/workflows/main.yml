@@ -12,12 +12,12 @@ jobs:
    
     - name: Install Node
       uses: actions/setup-node@v1
-        with:
-            node-version: 16.4.0
+      with:
+          node-version: 16.4.0
 
     - name: npm dependencies
       run: npm install
-      
+
     - name: Deploy
       run: npm run deploy
 
