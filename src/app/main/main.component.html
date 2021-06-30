@@ -1,0 +1,18 @@
+<p>main works!</p>
+
+<form [formGroup]="myForm">
+    <div class="d-flex justify-content-center type-question">
+        What best describes you?
+      </div>
+
+      <div class="d-flex justify-content-center type-answer">
+        <div class="btn-group" ngbRadioGroup name="radioBasic" formControlName="resumetype">
+          <label ngbButtonLabel class="btn btn-student-type btn-sm" (click)="resumeType(1)">
+              <input ngbButton type="radio"  checked [value]=1 (click)="resumeType(1)">Student or Recent Graduate  
+          </label>
+          <label ngbButtonLabel class="btn btn-professional-type btn-sm active" (click)="resumeType(2)">
+              <input ngbButton type="radio"  [value]=2 (click)="resumeType(2)">Working Professional
+          </label>
+        </div>
+      </div>
+</form>
